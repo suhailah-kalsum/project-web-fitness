@@ -1,0 +1,30 @@
+
+body {
+    background-color: #0c0c0c;
+    color: white;
+}
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    text-align: center;
+}
+.btn-primary {
+    background-color: #00b4d8;
+    border: none;
+}
+.trainers img {
+    border-radius: 10px;
+}
+.footer {
+    background-color: #0077b6;
+    text-align: center;
+    padding: 20px;
+}
+.nav-link {
+    color: white !important;
+}
+.highlight-bar {
+    background-color: #00b4d8;
+    padding: 10px;
+    font-weight: bold;
+}
