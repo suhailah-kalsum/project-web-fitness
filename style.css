@@ -1,30 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+html,body{
+ overflow-x: hi;
+}
+ body {
+     font-family: 'Poppins',sans-serif;
+ }
+ .custome-bg{
+     background-color: #1391AD !important;
+ }
+ .nav-link{
+     color: white;
+     font-family: poppins;
+ }
+ .nav-link:hover{
+     color: rgb(164, 158, 158) !important;
+ }
+ #header {
+     transition: background-color 0.3s ease-in-out;
+     background-color: rgba(0, 0, 0, 0.877); /* Awalnya transparan */
+ }
+ 
+ #header.scrolled {
+     background-color: rgba(0, 0, 0, 0.215); /* Saat scroll, lebih solid */
+ }
+ .hero{
+     color: white;
+     background: linear-gradient(
+     to bottom,         
+      rgb(0, 0, 0) 40%,  
+     #0a252f 40%       
+     );
+ }
 
-body {
-    background-color: #0c0c0c;
-    color: white;
-}
-.hero {
-    background: url('hero-image.jpg') center/cover no-repeat;
-    padding: 100px 0;
-    text-align: center;
-}
-.btn-primary {
-    background-color: #00b4d8;
-    border: none;
-}
-.trainers img {
-    border-radius: 10px;
-}
-.footer {
-    background-color: #0077b6;
-    text-align: center;
-    padding: 20px;
-}
-.nav-link {
-    color: white !important;
-}
-.highlight-bar {
-    background-color: #00b4d8;
-    padding: 10px;
-    font-weight: bold;
-}
+ .img-fluid{
+     max-width: 100%;
+     width: 1342px;
+     height: 473px;
+     border-radius: 24px;
+     
+     top: 151px;
+     left: 85px;
+     object-fit: cover; /* Mencegah gambar melar */
+ }
+ .img-2{
+ max-width: 100%;
+ width: 1342px;
+ height: 473px;
+ border-radius: 24px;
+     
+ top: 151px;
+ left: 85px;
+ object-fit: cover; /* Mencegah gambar melar */
+ }
+ .contact-us{
+     font-family: 'PT serif';
+ }
+ .text h2{
+     font-family: 'Poppins', sans-serif;
+ }
+ .text p{
+  font-family: 'Poppins' sans-serif;
+ }
+ .custom-img{
+     /* object-fit: cover; */
+     
+     width: 436px ; 
+     /* max-width: 300px;  */
+     height: 154px;
+     border-radius: 70px; 
+     object-fit: cover;
+     /* aspect-ratio: 16  */
+     /* display: flex; */
+ }
+ 
+ h2 {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600; /* Lebih tebal */
+ }
+ 
+ p {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400; /* Normal */
+     font-size: 16px; /* Ukuran teks */
+ }
+ .container {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap; /* Responsif */
+     gap: 20px;
+ }
+ 
+ .custom-card {
+     position: relative;
+     width: 270px;    
+ }
+ 
+ .custom-card h5 {
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     font-size: 18px;
+     font-family: 'Poppins',sans-serif;
+     font-weight: 600;
+     color: white;
+     z-index: 2;
+     background: rgba(0, 0, 0, 0.6);
+     padding: 5px 10px;
+     border-radius: 10px;
+ }
+ 
+ .custom-card img {
+     /* padding: 20px; */
+    padding: 15px;
+     width: 120%; 
+     /* max-width: 350px;  */
+     height: 350px;
+     box-sizing: border-box;
+     /* width: 270px;  */
+     border-radius: 20px; /* Membuat sudut tumpul */
+     object-fit: cover; /* Pastikan gambar tetap rapi */
+     clip-path: polygon(0 0, 85% 0, 100% 25%, 100% 100%, 0% 100%) !important;
+
+     
+ }   
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     background-color: #000;
+     color: white;
+ }
+
+ .members {
+     font-weight: 600;
+     text-transform: uppercase;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .layanan {
+     background: white;
+     color: black;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     text-align: start;
+     width: 300px;
+ }
+
+ .card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .content {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ img.rounded-circle {
+     width: 60px;
+     height: 60px;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+
+ h5 {
+     margin: 0;
+     font-size: 18px;
+     font-weight: 600;
+ }
+
+ p {
+     font-size: 14px;
+     color: #666;
+ }
+
+ .footer-top {
+     background-color: #14A0A3;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 10%;
+ }
+
+ .footer-top h2 {
+     font-size: 1.8rem;
+     font-family: 'PT serif';
+ }
+
+ .footer-top .btn {
+     font-size: 1.2rem;
+     border-radius: 10px;
+ }
+
+ /* Bagian Bawah Footer */
+ .footer-bottom {
+     background-color: #0A6466;
+     padding: 30px 0;
+ }
+
+ .footer-bottom .logo {
+     width: 100px;
+     margin-bottom: 10px;
+ }
+
+ .footer-bottom .nav .nav-link {
+     color: white;
+     font-size: 1rem;
+     margin: 0 10px;
+     text-decoration: none;
+     transition: color 0.3s ease;
+ }
+
+ /* .footer-bottom .nav .nav-link:hover { */
+     /* color: #FFD700; */
+ /* } */
+
+ .footer-line {
+     border: 0.5px solid rgba(255, 255, 255, 0.5);
+     width: 80%;
+     margin: 20px auto;
+ }
+
+ .footer-bottom p {
+     margin-top: 10px;
+     font-size: 0.9rem;
+ }
+ .btn1{
+     background: linear-gradient(180deg, #24FFDD -28.46%, #1391AD 100%);
+     border-radius: 70px;
+ }

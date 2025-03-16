@@ -1,47 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">FitXness</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Trainer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
-                </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap project fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesh eet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
+        <div class="container ">
+          <a class="navbar-brand text-white" href="#">
+            <img src="project.img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white bg-black">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trainer">Trainer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Review</a>
+              </li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <script>
+        window.addEventListener("scroll", function () {
+          let header = document.querySelector("#header");
+          if (window.scrollY > 50) {
+            header.classList.add("scrolled"); // Saat scroll, warna lebih solid
+          } else {
+            header.classList.remove("scrolled"); // Kembali transparan di atas
+          }
+        });
+      </script>
+      
+
+      <!-- home -->
+      <section class="home bg-black py-5" id="home">
+        <div class="container py-5">
+            <div class="row g-3 align-items-center">
+            <div class="col-md-12">
+                <img src="project.img/foto1.jpg" class="img-fluid rounded-5 white-50" alt="banner 1" >
+              </div>
+        </div>
+        </div> 
+        <div class="container p-3">
+    <div class="row home d-flex align-items-center justify-content-between">
+        
+        <!-- Judul -->
+        <div class="h2 col-12 col-md-5 text-white fw-bold">
+            We Dont Just Practice <br> But Calms The Soul
+        </div>
+        
+        <!-- Paragraf -->
+        <div class="fs-5 col-12 col-md-6 text-white text-start ps-md-5">
+            Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra. 
+            Fermentum sed amet eget elementum volutpat amet augue.
+        </div>
+        
+    </div>
+</div>
+       <div class="p-3 fst-italic fw-bold d-flex flex-column flex-md-row text-center justify-content-between fs-02 custome-bg text-white m-3"> 
+           <div class="col">
+             Beginner Friendly
+           </div>
+           <div class="col">
+             Solid Community
+           </div>
+           <div class="col">
+             Free Consultation
+           </div>
+           <div class="col">
+             Trainer Professional
+           </div>
+                  </div>
+              </section>
+
+      <!-- about us -->
+       <section class="hero bg-black"  id="about">
+          <div class="container py-5" >
+              <img src="project.img/foto6.jpg" class="img-2" alt="banner 1" >
+       <div class="row d-flex justify-content-between text-white m-0">
+       <div class="col-12 col-md-7 about-text">
+       <div class="fs-1 p-3 pt-5 fw-semibold text-white">
+          Fitness is The Best Solution <br> For You 
+       </div>
+          <p class="fs-5 p-3 y-5  text-white ">Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in 
+               maecenas viverra.Fermentum sed amet eget elementum  volutpat amet augue. Lorem ipsum dolor sit amet consectetur.
+                Eu <br> diam nulla netus in maecenas viverra. Fermentum sed amet eget elementum volutpat amet augue. 
+           </p>
+           <div class="btn1 btn text-white">Contact Now</div>
+
+          </div>
+           <!-- contac me -->
+            <!-- <div class="rounded-5 contact m-3"> -->
+              <div class="mt-5 bg-white text-dark rounded-5 col-12 col-md-4 p-4 ">
+              <div class="contact-us fs-2 fw-bold text-dark text-start pb-2 p-2">Contact Us!</div>
+                  <div class="d-flex align-items-center gap-3 p-2">
+                    <i class="bi bi-envelope fs-3 text-dark"></i>
+                    <div class="text">
+                        <h6 class="fs-6 fw-bold m-0">Email</h6>
+                        <p class="fs-sm">
+                            <a href="mailto:ecotourtravelkarimunjawa@gmail.com" class="text-dark text-decoration-none m-0">
+                                ecotourtravelkarimunjawa@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            <!-- Phone -->
+                    <div class="d-flex align-items-center gap-3 p-2">
+                        <i class="bi bi-telephone fs-3 text-dark"></i>
+                        <div class="text">
+                            <h6 class="fs-6 fw-bold mb-0">Phone</h6>
+                            <p class="fs-sm">
+                                <a href="tel:085242255919" class="text-dark text-decoration-none mb-0">
+                                    085-242-255-919
+                                </a>
+                            </p>
+                        </div>
+                    </div>     
+            <!-- Address -->
+                <div class="d-flex align-items-center gap-3 p-2">
+                  <i class="bi bi-geo-alt fs-3 text-dark"></i>
+                  <div class="text">
+                                <h6 class="fs-6 fw-bold mb-0">Address</h6>
+                                <p class="fs-sm mb-0 ">Jl. Bukit Kapuran, Karimunjawa, RT 04, RW 01, Jepara, Jawa Tengah</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>    
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div> 
+     </section>
+              <!-- Trainer Section -->
+<section class="trainers bg-black container " id="trainer">
+  <div class="py-5">
+      <div class="row d-flex align-items-center justify-content-between">
+          
+          <!-- Gambar (Kiri) -->
+          <div class="col-12 col-md-6">
+              <img src="project.img/foto2.jpg" alt="Trainer Image" class="custom-img ">
+          </div>
+          <div class="col-12 col-md-5  text-white">
+            <h2 class="fw-semibold">Trainer Professional</h2>
+            <p class="fs-5 text-white pt-1">Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra. Fermentum sed amet eget elementum volutpat amet augue</p>
+        </div>
+          
+      </div>
+  </div>
+</section>
+
+      
+           <!-- gambar untuk trainer -->
+
+           <div class="container text center mt-5 py-5 ">
+            <div class="row ">
+                <div class="custom-card">
+                  <div class="text-img pb-2 fw-bold d-flex-column flex-md-row justify-content-between text-white text-start px-2">Cevallin Hyen</div>
+                    <img src="project.img/foto3.jpg" alt="Cevalline Hyen" class="">
+                </div>
+                
+                <div class="custom-card">
+                  <div class="text-img pb-2 fw-bold d-flex-column flex-md-row justify-content-between text-white text-start px-2">Step Hanson</div>
+                    <img src="project.img/foto7.jpg" alt="Step Hanson">
+                </div>
+        
+                <div class="custom-card">
+                    <div class="text-img pb-2 fw-bold d-flex-column flex-md-row justify-content-between text-white text-start px-2">Angela Traine</div>
+                    <img src="project.img/foto4.jpg" alt="Angela Traine" >
+                </div>
+        
+                <div class="custom-card">
+                    <div class="text-img pb-2 fw-bold d-flex-column flex-md-row  justify-content-between text-white text-start px-2">Robert Bert</div>
+                    <img src="project.img/foto5.jpg" alt="Robert Bert">
+                </div>
             </div>
         </div>
-    </nav>
-   <!-- navbar -->
-
-    <section class="hero text-white text-center">
-        <div class="container">
-            <h1>We Don’t Just Practice, But Calms The Soul</h1>
-            <p>Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra.</p>
+                 
+            <div class="h2 text-center text-white py-2 mt-5 mb-0" id="review">They Are Happy Members</div>
+            <div class="container mt-5 pb-5">
+            <div class="row customer">
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 text-black bg-white layanan  p-3 m-3">
+            <div class="content d-flex align-items-center gap-4">
+            <img src="project.img/foto8.jpg" class="rounded-circle" alt="Phone Image">
+            <div>
+                <h5>Phone</h5>
+                <p>Teacher</p>
         </div>
-    </section>
+      </div>
+        <p class=" fs-sm p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum consequatur Lorem ipsum dolor sit amet.</p>
+          </div>
 
-    <section class="highlight-bar text-center text-white">
-        <div class="container d-flex justify-content-between">
-            <span>Beginner Friendly</span>
-            <span>Solid Community</span>
-            <span>Free Consultation</span>
-            <span>Trainer Professional</span>
+          <div class="col-12 col-md-6 col-sm-6 col-lg-4 text-black bg-white layanan p-3 m-3">
+          <div class="content d-flex align-items-center gap-4">
+          <img src="project.img/foto9.jpg" class="rounded-circle" alt="Jessica Image">
+          <div>
+              <h5>Jessica</h5>
+              <p>CEO</p>
+          </div>
+          </div>
+          <p class=" fs-sm p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum consequatur Lorem ipsum dolor sit amet.</p>
         </div>
-    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <div class="col-12 col-md-6 col-sm-6 col-lg-4 text-black bg-white layanan p-3 m-3">
+        <div class="content d-flex align-items-center gap-4">
+        <img src="project.img/foto10.jpg" class="rounded-circle" alt="Ozzie Image">
+        <div>
+            <h5>Ozzie</h5>
+            <p>Designer</p>
+        </div>
+        </div>
+        <p class="fs-sm p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum consequatur. Lorem ipsum dolor sit amet.</p>
+        </div>
+        </div>
+        </div>
+        </section>
+           <!-- Footer -->
+<footer class="footer">
+  <div class="container-fluid footer-top py-4 px-5 d-flex justify-content-between align-items-center">
+      <h2 class="fw-bold text-white">Join Our Member Now!</h2>
+      <button class="btn btn-warning text-white px-4 py-2 fs-5 fw-semibold">Contact</button>
+  </div>
+
+  <div class="container-fluid footer-bottom text-center py-4">
+      <img src="project.img/logo.png " alt="Logo" class="logo w-25">
+      <ul class="nav justify-content-center py-3">
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#trainer">Trainer</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#program">Program</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+      </ul>
+      <hr class="footer-line">
+      <p class="text-white">&copy; 2023 Fitness. All rights reserved.</p>
+  </div>
+</footer>
+
+      <!-- script java -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
 </html>
